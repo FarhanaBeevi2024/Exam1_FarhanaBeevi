@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container p{
+    justify-content:center;
+    text-align: justify;
+    margin: 50px 15px 50px 20px;
+    
+}
+.container img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media(min-width:768px)
+{
+.container
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+    gap: 30px;
+  
+}
+@media(max-width:768px)
+{
+    .container 
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+   
+    .container p{
+        margin-right: 10px;
+    }
+}
+}
